@@ -4,6 +4,7 @@ import { useState } from "react";
 const useForm = (initialValue) => {
 
     const [values, setValues] = useState(initialValue);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
 
     const handleChanges = e => {
@@ -14,7 +15,13 @@ const useForm = (initialValue) => {
 
     };
 
-          return [handleChanges, values]
+    
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowSuccessMessage(true);
+  };
+
+  return [values, handleChanges, handleSubmit, showSuccessMessage];
 
 };
 

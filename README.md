@@ -29,14 +29,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+  You extend the component from react, create a constructor to create state. Add super to access created state outside the constructor. create a render fuction and start writting app.
 
 2. Describe the different phases of the component lifecycle.
+  a. Mounting: componentDidMount is called and state is defined.
+  b. State is rendered.
+  c. after everything is done, the component is removed.
 
 3. Demonstrate an understanding of class component lifecycle methods.
+  The app is created, updated, and destroyed.
 
 4. Define stateful logic.
 
 5. Describe how to test a React component with React Testing Library.
+  You test to seeing if the components of the app is doing what it is supposed to, if it fails test, you find what caused it and fix it.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -75,6 +81,7 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 - [ ] In the final terminal window, make sure you are in the `client` folder still
 - [ ] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
+    When you have 3900x, "I wonder" hahaha it didn't do much, sad day
 
 **Commit and Push OFTEN!**
 
